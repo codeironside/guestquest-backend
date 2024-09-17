@@ -1,0 +1,40 @@
+{
+  "name": "guest-quest-backend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server":"nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeironside/guestquest-backend.git"
+  },
+  "author": "oluwatobi ayoola jolaosho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codeironside/guestquest-backend/issues"
+  },
+  "homepage": "https://github.com/codeironside/guestquest-backend#readme",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.5.0",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^8.6.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.15",
+    "nodemon": "^3.1.4",
+    "process": "^0.11.10",
+    "request-ip": "^3.3.0",
+    "stripe": "^16.11.0",
+    "winston": "^3.14.2",
+    "winston-daily-rotate-file": "^5.0.0"
+  }
+}
