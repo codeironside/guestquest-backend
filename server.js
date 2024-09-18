@@ -14,7 +14,8 @@ const logger = require("./utils/logger");
 
 const app = express();
 
-const port = process.env.PORT;
+const port = process.env.PORT || 1234;
+
 // Logger
 app.use(morgan("tiny", { stream: logger.stream }));
 app.use(
@@ -63,5 +64,5 @@ app.use(errorHandler);
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
-    logger.info("Server running on port ${port}");
+    logger.info(`Server running on port ${port}`);
 });
