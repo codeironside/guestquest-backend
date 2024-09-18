@@ -6,9 +6,9 @@ const morgan = require("morgan");
 const requestIp = require("request-ip");
 const cors = require("cors");
 const corsOption = require("./config/corsOption");
-const credentials = require("./middleware/credentials");
-const { errorHandler } = require("./middleware/errormiddleware");
-const { Server } = require("socket.io");
+//const credentials = require("./middleware/credentials");
+const { errorHandler } = require("./middileware/errormiddleware");
+//const { Server } = require("socket.io");
 const connectDB = require("./config/db");
 const logger = require("./utils/logger");
 
@@ -28,7 +28,7 @@ app.use(requestIp.mw());
 connectDB();
 
 // Middleware
-app.use(credentials);
+//app.use(credentials);
 app.use(cors(corsOption));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -43,10 +43,10 @@ app.use((req, res, next) => {
 });
 // Your routes go here
 app.get("/", (req, res) => {
-    res.send("finished the end point");
+    res.send("welcome to the default route, if you get this message then it means you have probably set it u, doesnt mean you wont further experience challenge");
 });
 // Routes
-app.use("/api/v1/student", require("./routes/student onboarding/onboarding"));
+app.use("/api/v1/staff", require("./routes/Staff/Staff"));
 // app.use("/api/v1/shops", require("./routes/shops.route"));
 // app.use("/api/v1/threads", require("./routes/threads"));
 // app.use("/api/v1/blogs", require("./routes/blog"));

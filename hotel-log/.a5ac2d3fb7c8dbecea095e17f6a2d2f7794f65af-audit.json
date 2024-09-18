@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "hotel-log\\.a5ac2d3fb7c8dbecea095e17f6a2d2f7794f65af-audit.json",
+    "files": [
+        {
+            "date": 1726664818064,
+            "name": "hotel-log\\2024-09-18.log",
+            "hash": "7beaddd5e6b7cac7c63f0f2837b49d0011e4768ffef7ef5c7847180178e6fb44"
+        }
+    ],
+    "hashType": "sha256"
+}

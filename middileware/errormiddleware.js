@@ -1,5 +1,5 @@
-const { stack } = require("../routes/users");
-const logger = require("../utils/logger.js");
+// const { stack } = require("../routes/users");
+const logger = require("../utils/logger");
 
 const errorHandler = (err, req, res, next) => {
     let statusCode
