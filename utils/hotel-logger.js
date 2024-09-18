@@ -27,7 +27,7 @@ const dailyRotateFileTransport = new transports.DailyRotateFile({
 });
 
 
-const logger = createLogger({
+const hotellogger = createLogger({
     // change level if in dev environment versus production
     level: env === 'development' ? 'verbose' : 'info',
     handleExceptions: true,
@@ -56,10 +56,10 @@ const logger = createLogger({
 });
 ;
 
-logger.stream = {
+hotellogger.stream = {
     write: (message) => {
-        logger.info(message);
+        hotellogger.info(message);
     },
 };
 
-module.exports = logger;
+module.exports = hotellogger;
