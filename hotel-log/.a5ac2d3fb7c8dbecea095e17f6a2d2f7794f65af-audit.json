@@ -9,6 +9,16 @@
             "date": 1726664818064,
             "name": "hotel-log\\2024-09-18.log",
             "hash": "7beaddd5e6b7cac7c63f0f2837b49d0011e4768ffef7ef5c7847180178e6fb44"
+        },
+        {
+            "date": 1727562309076,
+            "name": "hotel-log\\2024-09-28.log",
+            "hash": "1abcf998c127cfe160cc068af354229e34ef70201c8b7946058a50c6bd36e537"
+        },
+        {
+            "date": 1727564535002,
+            "name": "hotel-log\\2024-09-29.log",
+            "hash": "5cdb282f71213037a4d539e4e2b842063bbb11df5c623b1db91bc1a5c328fe84"
         }
     ],
     "hashType": "sha256"
