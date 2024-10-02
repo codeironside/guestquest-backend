@@ -1,12 +1,13 @@
 const mongoose = require("mongoose");
 // const { level } = require("winston");
-const STAFF = mongoose.Schema(
+const American = mongoose.Schema(
     {
-        firstName: {
-            type: String,
-            required: [true, "please add a first name "],
+        Create: {
+            type: Boolean,
+            required: [true, "please add a value "],
+            default:false
         },
-        middleName: {
+        View: {
             type: String,
         },
         lastName: {
@@ -48,4 +49,4 @@ const STAFF = mongoose.Schema(
         timestamps: true,
     }
 );
-module.exports = mongoose.model("STAFF", STAFF);
+module.exports = mongoose.model("American", American);

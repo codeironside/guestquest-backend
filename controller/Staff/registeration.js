@@ -2,12 +2,12 @@ const asyncHander = require("express-async-handler")
 const generateToken = require("../../utils/generateToken")
 const generateStaffId = require("../../utils/staffIdgenerator");
 const Staff = require("../../model/Staff/Staff");
-const { level } = require("winston");
+//const { level } = require("winston");
 
 
 
 const register_staff = asyncHander(async (req, res) => {
-    const { First_name.Middle_name, Last_name, email, role, Level } = req.body;
+    const { First_name,Middle_name, Last_name, email, role, Level } = req.body;
     if (!First_name|| !Last_name || !email || !password || !role || !Level
     ) {
         throw Object.assign(new Error(`field can not be empty`), {
@@ -32,8 +32,8 @@ const register_staff = asyncHander(async (req, res) => {
     })
     const token = generateToken(staff._id)
     if (staff) {
-        res.status(202).Header(Authorization, `Bearer ${token}`).({
-            ..staff._doc
+        res.status(202).header('Authorization', `Bearer ${token}`).json({
+            ...staff._doc
         })
     }
 })
